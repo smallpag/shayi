@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Common.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Shopping.Cart.min.css">
+    <title>购物车</title>
+</head>
+<body>
+    <header id="header"></header>
+    <script>
+        $("#header").load("header.php");
+    </script>
+    <section class="buy_cart">
+        <div class="buy_carthead clearfix">
+            <h1>我的购物车</h1>(<span class="carttotal">  </span>)
+        </div>
+        <section class="buy_cartmain">
+            <div class="buy_cart_choice_all clearfix">
+                <label for="checkAll" class="f_l choice_all" ><span></span> 全选</label>
+                <div class="f_r">
+                    <span class="info">已选商品<span class="num">0</span>件（不含运费、装裱费）</span><span class="price"><span>¥</span><em>0</em></span>
+                    <button  onclick=" " class="">结算</button>
+                </div>
+            </div>
+            <div class="buy_cart_list" >
+                <ul>
+                    <li>
+                        <!-- <div class="choice_item">
+                            <p class="daytime">2018-07-20</p>
+                        </div> -->
+                        <div class="cartitem">
+
+                            <!-- <div class="item clearfix" style="border-color: rgb(0, 0, 0);">
+                                <div class="f_l choice"  style="background:url('img/cart/wxz.svg') no-repeat">
+                                </div>
+                                <div class="f_l infobox">
+                                    <div class="f_l thumb">
+                                        <a >
+                                            <div class="img"  style="background:url('img/cart/11.png') no-repeat;background-size: contain;cursor: pointer;"></div>
+                                        </a>
+                                    </div>
+                                    <div class="f_l detail">
+                                        <a class="Mobile_name">李华相</a>
+                                        <div class="title">背影</div>
+                                        <p class="PC_name">
+                                            <a>李华相</a>
+                                        </p>
+                                        <p >120x100cm</p>
+                                    </div>
+                                    <div class="f_l price_unit">
+                                        <p class="now price" style="display:inline-block">
+                                            ¥ <span>12,350</span>
+                                        </p>
+                                    </div>
+                                    <div class="f_l op">
+                                        <a href="javascript:;" class="del">移除</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="mz"  href="javascript:" style="display: block;">
+                                <div><img src="img/cart/mj.png"></div>
+                                <span >满2888减188，满5888减388，满9888减688</span>
+                            </a> -->
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="buy_cart_choice_all fixbottom clearfix">
+            <label for="checkAll" class="f_l choice_all" style="display: inline-block;"><span></span> 全选</label>
+            <a href="javascript:;" class="dels">移除</a>
+            <div class="f_r">
+                <span class="info">已选商品<span class="num">0</span>件（不含运费、装裱费）</span>
+                <span class="mobileshow yunfei _hidden">（不含运费）</span>
+                <span class="price"><span class="mobileshow heji _hidden">合计:</span>¥<em>0</em></span>
+                <button  class="">结算<span class="_hidden"  style="display: none;">(<span >0</span>)</span></button>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        function aaa(str){
+            var arr=str.split("");
+            var res="";
+            var len=arr.length;
+            for(var i=0;i<len-3;i++){
+                res+=arr[i];
+            }
+            res+=",";
+            for(var i=len-3;i<len;i++){
+                res+=arr[i];
+            }
+            return (res);
+        };
+        $(function(){
+            var uid=sessionStorage.getItem("uid");
+            var $allcheck=$("label.choice_all");
+            var $item=$("div.cartitem");
+            function load(){
+                $.ajax({
+                    type:"get",
+                    url:"php/cart/getcart.php",
+                    data:{uid},
+                    dataType:"json",
+                    success:function(pro){
+                        var html="",sum=0,isall=true,num=0;
+                        pro.forEach(function(p){
+                            var {id,cid,title,artist,list_url,size,price,is_check}=p;
+                            if(parseInt(is_check)){
+                                sum+=parseInt(price);
+                                num++;
+                            }else{ 
+                                isall=false;
+                            }
+                            var act=parseInt(is_check)?"active":"";
+                            html+=`
+                                <div class="item clearfix ${act}" style="border-color: rgb(0, 0, 0);" data-price="${price}" data-cid="${cid}" data-check="${is_check}">
+                                    <div class="f_l choice">
+                                        <label></label>
+                                    </div>
+                                    <div class="f_l infobox">
+                                        <div class="f_l thumb">
+                                            <a href="product.html?id=${id}">
+                                                <div class="img"  style="background:url('${list_url}') no-repeat;background-size:cover;cursor: pointer;"></div>
+                                            </a>
+                                        </div>
+                                        <div class="f_l detail">
+                                            <a class="Mobile_name">${artist}</a>
+                                            <div class="title">${title}</div>
+                                            <p class="PC_name">
+                                                <a>${artist}</a>
+                                            </p>
+                                            <p >${size}cm</p>
+                                        </div>
+                                        <div class="f_l price_unit">
+                                            <p class="now price" style="display:inline-block">
+                                                ¥ <span>${aaa(price)}</span>
+                                            </p>
+                                        </div>
+                                        <div class="f_l op" data-cid="${cid}">
+                                            <a href="javascript:;" class="del">移除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="mz"  href="javascript:" style="display: block;">
+                                    <div><img src="img/cart/mj.png"></div>
+                                    <span >满2888减188，满5888减388，满9888减688</span>
+                                </a>
+                            `;
+                        });
+                        $("span.carttotal").html(pro.length);
+                        $item.html(html);
+                        sum=sum?aaa(String(sum)):0;
+                        $("em").html(sum);
+                        $(".num").html(num);
+                        if(isall){
+                            $("label.choice_all").addClass("checked");
+                        }else{
+                            $("label.choice_all").removeClass("checked");
+                        }
+                        var $act=$(".active");
+                        if($act.length){
+                            $("button").addClass("ok");
+                        }else{
+                            $("button").removeClass("ok");
+                        }
+                    },
+                    error:function(){alert("网络错误")}
+                });
+            }
+
+            if(uid){
+                load();
+            }else{
+                alert("登录后才可查看购物车");
+                location.href="login.html?back="+location.href
+            }
+            $item.on("click","div.choice,div.op",function(){
+                var $div=$(this);
+                if($div.is("div.choice")){
+                    var cid=$div.parent().attr("data-cid");
+                    var checked=$div.parent().hasClass("active")?0:1;
+                    $.ajax({
+                        type:"get",
+                        url:"php/cart/check.php",
+                        data:{cid,checked},
+                        success:function(){
+                            load();
+                        },
+                        error:function(){
+                            alert("网络错误");
+                        }
+                    })
+                }else{
+                    if(confirm("确定删除该艺术品？")){
+                        var cid=$(this).attr("data-cid");
+                        $.ajax({
+                            type:"get",
+                            url:"php/cart/delete.php",
+                            data:{cid},
+                            success:function(){
+                                load();
+                            },
+                            error:function(){
+                                alert("网络错误");
+                            }
+                        })
+                    }
+                }
+            })
+
+            $allcheck.click(function(){
+                var checked=$(".checked").length>0?0:1;
+                $.ajax({
+                    type:"get",
+                    url:"php/cart/checkAll.php",
+                    data:{checked,uid},
+                    success:function(){
+                        load();
+                    }
+                })
+            });
+
+            $("a.dels").click(function(){
+                if(confirm("确定删除所有艺术品吗？")){
+                    $.ajax({
+                        type:"get",
+                        url:"php/cart/deleteAll.php",
+                        data:{uid},
+                        success:function(){
+                            load();
+                        }
+                    })
+                }
+            })
+        });
+        
+    </script>
+</body>
+</html>

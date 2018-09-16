@@ -1,0 +1,552 @@
+#header {
+    min-width: 1180px;
+    background: #FFF;
+    height: 140px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 999;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+    -moz-transition: height, 0.5s;
+    -webkit-transition: height, 0.5s;
+    -o-transition: height, 0.5s;
+    -ms-transition: height, 0.5s;
+    transition: height, 0.5s;
+}
+b{
+    font-weight: bold;
+}
+.content_H {
+    overflow: hidden;
+}
+.Buy_art {
+    width: 100%;
+}
+.Buy_art .simple {
+    width: 92.5%;
+    height: 310px;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+.Buy_art .choice_left {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 7.5%;
+    float: left;
+    width: 50%;
+    line-height: 80px;
+    font-size: 0;
+}
+.Buy_art .simple .price, .Buy_art .simple .size {
+    position: relative;
+}
+.Buy_art .choice_left .shape {
+    line-height: 40px;
+    position: relative;
+}
+.Buy_art .choice_left>p>b {
+    font-size: 14px;
+    margin-right: 50px;
+}
+.Buy_art .simple .price i:first-of-type, .Buy_art .simple .size i:first-of-type {
+    margin-left: -5px;
+    left: 12%\9;
+}
+.Buy_art .simple .price i:last-of-type, .Buy_art .simple .size i:last-of-type {
+    margin-left: -15px;
+    left: 78%\9;
+}
+.Buy_art .choice_left .price a, .Buy_art .choice_left .size a, .Buy_art .choice_left .shape a {
+    background-color: #ddd;
+}
+.Buy_art .simple .choice_left a {
+    display: inline-block;
+    width: 13%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left:-4px; 
+}
+/*.Buy_art .choice_left a+a{
+    margin-left: -4px;
+}*/
+.Buy_art .simple .price i, .Buy_art .simple .size i {
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    top: 15px;
+    font-style: inherit;
+    width: 0;
+    height: 0;
+}
+.Buy_art .simple .price i {
+    margin-left: -30px;
+}
+.Buy_art .simple .size i {
+    margin-left: -15px;
+}
+.Buy_art .simple .choice_left a:hover{
+    background: rgba(86,86,86,0.5);
+
+}
+.Buy_art .choice_left .price a.active, .Buy_art .choice_left .size a.active, .Buy_art .choice_left .shape a.active {
+    background-color: #000;
+    border-color: #000;
+}
+.Buy_art .red {
+    background-color: #e73233 !important;
+}
+.Buy_art .yellow {
+    background-color: #ffea03 !important;
+}
+.Buy_art .green {
+    background-color: #32cc66 !important;
+}
+.Buy_art .blue {
+    background-color: #0099ff !important;
+}
+.Buy_art .choice_left .color .bwg {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.Buy_art .choice_left .color .bwg img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.Buy_art .simple .color a:hover{
+    opacity:0.8;
+}
+.Buy_art .choice_left .shape a {
+    -moz-transform: translate(0, 50%);
+    -o-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    background-color: #fff;
+    border: 1px solid #666;
+    margin-right: 10%;
+    margin-top: -10px;
+}
+.Buy_art .choice_left .shape .square {
+    width: 24px;
+    height: 24px;
+}
+.Buy_art .choice_left .shape .la_Rec {
+    height: 16px;
+    width: 32px;
+}
+.Buy_art .choice_left .shape .lo_Rec {
+    height: 32px;
+    width: 16px;
+}
+.Buy_art .choice_left .shape .round {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.Buy_art .choice_left .shape .irregular {
+    border: none;
+    height: 0;
+    text-decoration: none;
+    color: #666;
+    font-size: 36px;
+    position: relative;
+    top: 14px;
+}
+.Buy_art .choice_left .shape a:hover{
+    background: #666
+}
+.Buy_art .choice_left .shape a img {
+    width: 30px;
+}
+.Buy_art .choice_left .shape a .default {
+    display: inline-block;
+}
+.Buy_art .choice_middle {
+    float: left;
+    width: 17.5%;
+}
+.Buy_art .simple .choice_middle>div {
+    float: left;
+}
+.Buy_art .choice_middle>div.space {
+    width: 62.5%;
+}
+.Buy_art .choice_middle>div h3 {
+    line-height: 80px;
+    font-size: 14px;
+}
+.Buy_art .choice_middle>div ul>a {
+    cursor: pointer;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666;
+    display: block;
+}
+.Buy_art .choice_right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 32.5%;
+    border-left: 1px solid #eee;
+}
+.Buy_art .choice_right .text {
+    cursor: pointer;
+    text-align: center;
+    float: left;
+    width: 30%;
+    margin-top: 35px;
+}
+.Buy_art .choice_right .text ul {
+    margin-bottom: 30px;
+}
+.Buy_art .choice_right .text ul a {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    display: block;
+}
+.Buy_art .choice_right .show_wall {
+    background-size: cover !important;
+    margin-top: 18px;
+    height: 274px;
+    float: left;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.Buy_art .choice_right .show_wall h2 {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.Buy_art .choice_right .show_wall hr {
+    margin: 20px auto;
+    background-color: #fff;
+    border: none;
+    height: 1px;
+    width: 30%;
+    position: relative;
+    z-index: 2;
+}
+.Buy_art .choice_right .show_wall p {
+    line-height: 26px;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+.abs100 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.Buy_art .buy_search {
+    position: relative;
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    background-color: #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 7.5%;
+    border-bottom: 1px solid #eee;
+}
+.Buy_art .buy_search span {
+    padding: 0 26px 0 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #666;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    position: relative;
+    line-height: 28px;
+    display: inline-block;
+}
+.Buy_art .buy_search span img {
+    width: 10px;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    cursor: pointer;
+}
+.Buy_art .buy_search span:after {
+    content: " ";
+    width: 1px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 19px;
+    background-color: rgba(255,255,255,0.2);
+}
+.Buy_art .buy_search span+span {
+    margin-left: 8px;
+}
+.Buy_art .buy_search span+.s_reset {
+    display: inline;
+}
+.Buy_art .buy_search .s_reset {
+    display: none;
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+}
+.Buy_art .buy_search span+.s_reset+div {
+    padding-left: 20px;
+}
+.Buy_art .buy_search div {
+    display: inline-block;
+    border-radius: 13px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    position: relative;
+    height: 28px;
+    top: 12px;
+}
+.Buy_art .buy_search div img {
+    width: 18px;
+    position: relative;
+    top: -8px;
+    height: 18px;
+}
+.Buy_art .buy_search div .sousuo {
+    position: relative;
+    top: -12px;
+    font-size: 14px;
+    padding-left: 8px;
+    border: none;
+    line-height: 16px;
+}
+.Buy_art .buy_search button.sure {
+    border-color: #999;
+    background-color: #999;
+    color: #fff;
+    -moz-transition: background-color, 1s;
+    -webkit-transition: background-color, 1s;
+    -o-transition: background-color, 1s;
+    -ms-transition: background-color, 1s;
+    transition: background-color, 1s;
+    margin-top: 6px;
+    float: right;
+    border: none;
+    width: 130px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+}
+.Buy_art .content {
+    width: 100%;
+    background-color: #fff;
+    padding: 14px 0 50px;
+}
+.Buy_art .content>a {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #666;
+    text-decoration: none;
+}
+.Buy_art .content>a+a {
+    margin: 0;
+}
+.Buy_art .content>a {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #666;
+    text-decoration: none;
+}
+.Buy_art .content>a h1 {
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+}
+.Buy_art .content .filter {
+    text-align: right;
+    margin: 0 auto 30px;
+    max-width: 1200px;
+    padding-right: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.Buy_art .content .filter select {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-right: 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.Buy_art .content .filter select option {
+    outline: none;
+}
+footer.simple {
+    width: 100%;
+    padding: 0;
+    background: #fff;
+}
+footer.simple .SimpleFooter {
+    height: 140px;
+    background-color: #fff;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 100px 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer.simple .SimpleFooter p {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+footer.simple .SimpleFooter .footer_link {
+    text-align: left;
+    position: relative;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+footer.simple .SimpleFooter .footer_link a {
+    font-size: 14px;
+    margin-right: 7.5%;
+    color: #000;
+}
+footer.simple .SimpleFooter .footer_link span img {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    height: 80px;
+}
+.Buy_art .content .container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+element.style {
+    position: relative;
+    height: 0px;
+}
+.Buy_art .content .container .noImg {
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    margin: 100px 0;
+}
+.clearfix {
+    display: block;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.Buy_art .content .container .grid-item {
+    width: 280px;
+    min-height: 100px;
+    float: left;
+    background: #FFF;
+    margin: 20px 46px 40px 46px !important;
+}
+.Buy_art .content .container .grid-item .thumb {
+    position: relative;
+}
+.Buy_art .content .container .grid-item .thumb img {
+    background: #ccc;
+    display: block;
+    cursor: pointer;
+}
+.Buy_art .content .container .grid-item .detail {
+    position: relative;
+    padding: 12px 0 0 0;
+}
+.Buy_art .content .container .grid-item .detail p:nth-child(1) {
+    font-style: normal;
+    margin-bottom: 8px;
+}
+.Buy_art .content .container .grid-item .detail p:nth-child(1) a {
+    color: #000;
+    font-weight: 600;
+}
+.Buy_art .content .container .grid-item .detail p {
+    color: #666666;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 20px;
+    height: 20px;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: italic;
+}
+.Buy_art .content .container .grid-item .detail p a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+}
+.Buy_art .content .container .grid-item .detail p span {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+.Buy_art .content .container .grid-item .detail div {
+    margin-top: 10px;
+    padding: 0 20px;
+    display: -webkit-flex;
+}
+.Buy_art .content .container .grid-item .detail .qmImg {
+    height: 26px;
+    top: 85px;
+    left: 18px;
+}
+.Buy_art .content .container .grid-item .detail .qmBox .price {
+    margin-top: 2px;
+    padding-left: 10px !important;
+}
+.Buy_art .content .container .grid-item .detail p.price {
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+

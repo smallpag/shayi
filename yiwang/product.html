@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Common.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Goods.Detail.min.css">
+    <link rel="stylesheet" href="css/CommonPC.min.css">
+    <link rel="stylesheet" href="css/cvszoom.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <title>商品详情</title>
+</head>
+<body>
+    <div id="detail_index" class="clearfix">
+        <section id="container">
+            <div class="header">
+                <div>
+                    <nav class="detailNav clearfix">
+                        <a class="back" href="buy.html">
+                            返回
+                        </a>
+                        <span>
+                            <!-- <a href="index.html">艺网</a>
+                            › 
+                             <a href="buy.html?category=">油画</a>
+                            › 
+                            <a href="">杜萌萌</a>
+                            ›
+                            <a>海-2</a> -->
+                        </span>
+                        <div class="f_r">
+                            <div style="display: inline-block; vertical-align: top;" class="headimgbox">
+                                <a href="" class="usercenter">
+                                    <img src="img/product/login.png">
+                                </a>
+                                <div class="login_hover">
+                                    <i></i>
+                                    <ul>
+                                        <li><a href="">会员中心</a></li>
+                                        <li><a href="">我的珍藏</a></li>
+                                        <li><a href="">我的订单</a></li>
+                                        <li><a href="cart.html" onclick="">我的购物车</a></li>
+                                        <li><a href="javascript:sessionStorage.clear();location.href='index.html'">退出</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="cart.html" onclick="">
+                                <span class="carta">
+                                    <i class="_hidden">1</i>
+                                    <img src="img/product/car.png">
+                                </span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div id="topbtns" class="_hidden" style="display: block;">
+                <div class="bg"></div>
+                <div id="xq" class="active topbtn t_c">详情</div>
+                <div id="msg" class="topbtn t_c">美术馆</div>
+                <div id="shcj" class="topbtn t_c">生活空间</div>
+            </div> -->
+
+
+            <section class="detailBox clearfix">
+                <div class="goodsimg">
+                    <div class="goodsimgbox">
+                        <!-- <div class="img">
+                            <img src="img/products/pro/04.jpg" style="width: 459px; height: 458px;">
+                        </div>
+                        <div class="otherimg clearfix">
+                            <div class="active" style="background-image: url(img/products/fdj/04.jpg);">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="goodsInfo">
+                    <!--价格-->
+                    <div class="btns">
+                        <span class="buyInfoBtn active">价格</span>
+                        <span class="artInfoBtn f_r">
+                            <i class="_hidden" >点击查看作品信息</i>
+                            作品信息
+                        </span>
+                    </div>
+                    <!--价格里的细节-->
+                    <div class="buyInfo" >
+                        <p class="price"> <!--¥2,120--></p> 
+                        <div class="mz">
+                            <p class="mz_text">
+                                <a href="">
+                                    <img src="img/product/mj.png" alt="">
+                                    <i>满2888减188，满5888减388，满9888减688</i>
+                                    <span></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="classify">
+                            <ul>
+                                <li class="yuanchuang">
+                                    <img src="img/product/yc.png" alt=""> 原创
+                                </li>
+                                <li class="zhuangbiao">
+                                    <img src="img/product/zb.png" alt=""> 无装裱
+                                </li>
+                            </ul>
+                        </div>
+                        <section class="el-choose-frame">
+                            <div>
+                                <div class="tabBtn chooseframe up">选择画框装裱：
+                                    <span class="arrow f_r">▾</span>
+                                    <span class="f_r">无框，无卡纸</span>
+                                </div>
+                                <div class="chooseframebox">
+                                    <div class="stylebox">
+                                        <div class="frametip _hidden" style="color: red; font-size: 14px; height: 20px; line-height: 20px; margin-bottom: 10px;">
+                                            请先选择画框装裱样式
+                                        </div>
+                                        <div class="framestylebox clearfix">
+                                            <span class="framestyle active">无框</span>
+                                            <span class="" style="background-image: url(img/product/bk1.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk2.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk3.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk4.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk5.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk6.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk7.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk8.png);"></span>
+                                        </div>
+                                        <div class="paddingstylebox">
+                                            <span class="paddingstyle active">无卡纸</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="buyBtn">
+                            <div>
+                                <button class="cart detailBtn">
+                                        <i style="font-style:normal;display:block;cursor: pointer;">加入购物车</i>
+                                </button>
+                            </div>
+                            <p class="pinfo FrameAmount">
+                                <span class="span1">装裱费：</span>
+                                <span class="mount" style="margin-right:24px;">免费</span>
+                                <span class="span1">运费：</span>
+                                <span class="ExpressAmount">¥100</span>
+                                <input type="checkbox" class="f_r _hidden" id="isNeedFrame">
+                            </p>
+                        </div>
+                    </div>
+                    <!--作品信息-->
+                    <div class="detail" >
+                        <!-- <div class="baseInfo">
+                            <p class="name">
+                                <a href="" target="_blank">杜萌萌</a>
+                            </p>
+                            <p class="artname">
+                                <span class="mingcheng">海-2</span>,
+                                <span class="createdate">2015</span>
+                            </p>
+                            <p class="infos">
+                                <span class="caizhi">布面油画</span>,
+                                <span class="chicun">30x30cm</span>
+                                <span class="nianfen"></span>
+                            </p>
+                        </div>
+                        <div class="tuijian">
+                            <p>编辑推荐：</p>
+                            <p>艺术家天生自带童真纯洁的气质，描绘的画面有种虚实相生的想象。置身于一望无际的大海中，如同精神心灵接受了一次洗礼，仿佛进入一个如梦如幻、亦假亦真的童话世界。</p>
+                            <span>
+                                <br>
+                                ——遥满
+                            </span>
+                        </div> -->
+                    </div>
+                 </div>
+            </section>
+
+            <!--    美术馆       -->
+            <section class="msgowl" style="display: none;">
+                <div class="owl-prev"></div>
+                <div class="owl-next"></div>
+                <section class="works abs100 owl-carousel">
+                    <div class="work" biaoshifu="1">
+                        <div class="abs100 model1">
+                            <div class="staff widthLine" style="width: 267px; display: none;">
+                                <div></div><div></div>
+                                <span>0.8m</span>
+                            </div>
+                            <div class="staff heightLine" style="display: none;">
+                                <div></div><div></div>
+                                <span>0.8m</span>
+                            </div>
+                            <div class="staff imgLine imgWidthLine" style="display: block; margin-left: -50px; margin-top: -83px; transition: width 1s; width: 100px;">
+                                <div></div><div></div>
+                                <span>0.30m</span>
+                            </div>
+                            <div class="staff imgLine imgHeightLine" style="display: block; margin-left: -83px; margin-top: -50px; transition: height 1s; height: 100px;">
+                                <div></div><div></div>
+                                <span>0.30m</span>
+                            </div>
+                            <div class="imgScale">
+                                <!--<img src="" alt="海-2" oncontextmenu="return false" onselectstart="" style="height: 100px; width: 100px;">-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <section class="el-choose-frame ls_chooseframe _hidden">
+                <div class="morebtn">选择画框装裱</div>
+                <div>
+                    <div class="tabBtn chooseframe up">
+                        选择画框装裱：
+                        <span class="arrow f_r">▾</span>
+                        <span class="f_r">无框，无卡纸</span>
+                    </div> 
+                    <div class="chooseframebox">
+                        <div class="stylebox">
+                            <div class="frametip _hidden" style="color: red; font-size: 14px; height: 20px; line-height: 20px; margin-bottom: 10px;">请先选择画框装裱样式</div> 
+                            <div class="framestylebox clearfix">
+                                <span class="framestyle active">无框</span> 
+                                <span class="" style="background-image: url(img/product/bk1.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk2.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk3.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk4.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk5.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk6.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk7.png);"></span>
+                                            <span class="" style="background-image: url(img/product/bk8.png);"></span>
+                            </div> 
+                            <div class="paddingstylebox">
+                                <span class="paddingstyle active">无卡纸</span> <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--    生活空间   -->
+            <section id="lifescenes">
+                <div class="leftbtn"></div>
+                <div class="rightbtn"></div>
+                <div class="morescenes" style="bottom:-132px;">
+                    <div class="morebtn">更多场景</div>
+                    <div class="owl-carouselbox">
+                        <div class="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!--     放大镜    -->
+            <section id="model2"  style="overflow: hidden; display: none;">
+                <div style="background-image: url(img/products/fdj/04.jpg); background-size: 100% 100%; width: 2853px; height: 2847px; position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px 0px; transform: matrix(0.229575, 0, 0, 0.229575, 347.511, 81.7);">
+                    <img src="img/products/fdj/04.jpg" style="position: absolute; width: 2853px; height: 2847px; top: 0px; left: 0px; z-index: 0;">
+                </div>
+                <div class="cvs_thumbnail" style="width: 160px; height: 160px;">
+                    <div class="huidi"></div>
+                    <div class="shang"></div>
+                    <div class="xia"></div>
+                    <div class="previewbox" style="width: 160px; height: 159.66px;">
+                        <img src="img/products/fdj/04.jpg" draggable="false">
+                        <div class="brightbox" style="width: 160px; height: 159.66px; left: 0px; top: 0px;"></div>
+                        <div class="dimbox top" style="left: 0px; top: 0px; width: 100%; height: 0px;"></div>
+                        <div class="dimbox left" style="left: 0px; top: 0px; width: 0px; height: 159.66px;"></div>
+                        <div class="dimbox right" style="left: 160px; top: 0px; width: 0px; height: 159.66px;"></div>
+                        <div class="dimbox bottom" style="left: 0px; top: 159.66px; width: 100%; height: 0px;"></div>
+                    </div>
+                        <span class="btn scalebrightbox" style="left: 30px;"></span>
+                        <span class="btn closeButton">✕</span>
+                        <span class="btn smallButton">-</span>
+                        <span class="btn bigButton">+</span>
+                </div>
+            </section>
+        </section>
+
+        <!--作品详情-->
+        <section class="workInf clearfix">
+            <!-- <p>艺术品信息</p>
+            <div class="arter">
+                <div class="imgbox">
+                    <a href="" target="_blank">
+                        <img class="lazy" src="img/products/artist/02.png" alt="杜萌萌" style="display: inline;">
+                    </a>
+                </div>
+                <p class="name">
+                    <a href="" target="_blank">杜萌萌</a>
+                    <span class="vipIcon" style=""></span>
+                </p>
+                <p class="another">
+                    <a href="" target="_blank">
+                        共
+                        <span class="artworkcount">4</span>
+                        件作品
+                    </a>
+                </p>
+                <a class="more" href="" target="_blank">艺术家完整资料 &gt;</a>
+            </div>
+            <ul class="productsInformation">
+                <li class= "clearfix">
+                    <div><span>作品名称:</span><h1>海-2</h1></div>
+                    <div><span>艺 术 家:<span class="justify_fix"></span></span>杜萌萌</div>
+                    <div><span>材  质:</span>布面油画</div>
+                </li>
+                <li class="clearfix">
+                    <div><span>尺  寸:</span>30x30cm</div>
+                    <div><span>创作时间:</span>2015</div>
+                    <div><span>作品类型:</span>油画</div>
+                </li>
+                <li class="clearfix">
+                    <div><span>风  格:</span>具象表现</div>
+                    <div><span>题  材:</span>风景</div>
+                </li>
+            </ul> -->
+        </section>
+
+        <!--细节-->
+        <section class="workDes" style="display: block;">
+            <!-- <p>艺术评析</p>
+            <div>
+                <span class="yinhao yinhaoleft">“</span>
+                <span class="yinhao yinhaoright">”</span>
+                <i>
+                    艺术家天生自带童真纯洁的气质，描绘的画面有种虚实相生的想象。置身于一望无际的大海中，如同精神心灵接受了一次洗礼，仿佛进入一个如梦如幻、亦假亦真的童话世界。
+                    <br>
+                    <span>
+                            ——遥满
+                    </span>
+                </i>
+            </div>
+            <div class="onePingxi">
+                <img class="lazy" src="img/products/xj1/04.jpg">
+                <div class="textDes">
+                    <p>绘画对于我而言是一种修行，是自己和世界之间的沟通媒介，它让我读到自己的内心，并不断的去表达我的所思所想，可以说是我世界观的表达。而对于观众，我希望我的作品能传达一份温情和爱的力量。我始终相信，爱是化解一切的动力，也是我们之所以为生命的理由。——艺术家自述</p>
+                </div>
+            </div>
+            <div class="onePingxi">
+                <img class="lazy"  src="img/products/xj2/04.jpg">
+                <div class="textDes">
+                    <p>我希望通过绘画去唤醒观者对视觉图像背后事物的思考，这些作品并不具体，偏重内心的叙事，但仅仅用梦幻来形容，又过于武断。人们用梦幻形容美好，美好又意味着短暂、脆弱、小清新。我并不希望观众这样的想当然，对于我而言，这梦幻的爱就是我们能存活的美好的理由，它支撑着我们接受所有阴暗和痛苦，它让我们相信人与人之间的美好，相信宇宙对人类的眷顾。——艺术家自述</p>
+                </div>
+            </div> -->
+        </section>
+
+        <!--评论-->
+        <section id="commentsection" class="comment clearfix">
+            <div class="commentheader">
+                <p id="pinglun">评论</p> 
+                <textarea id="comment" name="comment" placeholder="请畅所欲言...（最多500个字符）"></textarea> 
+                <button id="commentbtn" class="fabiao">发　表</button>
+            </div> 
+        </section>
+        <!-- 小贴士 -->
+        <section class="smallRemind">
+            <div class="ywtixings">
+                <div class="ywtixing">
+                    <p>绘画作品</p>
+                    <div>
+                        <h3>存放</h3>
+                        <ul>
+                            <li>
+                                <p>放置画作的理想环境为室温14℃-18℃，相对湿度50%-60%；</p>
+                            </li>
+                            <li>
+                                <p>避光、防潮请避免阳光长期直射画面，保持画作放置处的空气流通，并远离厨卫等湿气较重的地方，避免灰尘、油烟损害画作；</p>
+                            </li>
+                            <li>
+                                <p>防风请勿在空调口、暖气扇旁放置画作，避免风力过大造成画作受损；</p>
+                            </li>
+                            <li>
+                                <p>防损请勿过于频繁地搬动画作，并避免任何腐蚀性材料（如化学药剂、清洁剂等）接触画面；观赏画作时，请尽量避免肢体与画作的直接接触。</p>
+                            </li>
+                        </ul>
+                        <h3>清洁与保养</h3>
+                        <h4>油画</h4>
+                        <ul>
+                            <li>
+                                <p>请使用干净、柔软的材料（擦布或黑貂豪笔）轻轻擦拭画上的灰尘；避免清洁剂、海绵或吸尘器接触画面；</p>
+                            </li>
+                            <li>
+                                <p>若受潮，请先用净布吸去水渍，再进行阴干，切忌暴晒；</p>
+                            </li>
+                            <li>
+                                <p>切勿将两张油画对贴放置，一旦画面粘连，会导致油彩脱坏。</p>
+                            </li>
+                        </ul>
+                        <h4>中国画</h4>
+                        <ul>
+                            <li>
+                                <p>请使用软质毛刷（如拂尘、羽毛掸子）清除灰尘，勿使用布类，并保证动作轻柔，避免损伤画纸；</p>
+                            </li>
+                            <li>
+                                <p>若受潮，请用干布或纸巾吸水，再进行阴干，切忌暴晒；</p>
+                            </li>
+                        </ul>
+                        <h4>版画</h4>
+                        <ul>
+                            <li>
+                                <p>未装裱的版画，请平铺放于干燥处或卷入画筒内；若多张叠放，请在画作之间用软质白纸进行分隔；</p>
+                            </li>
+                            <li>
+                                <p>已装裱的版画，定期用擦布或纸巾清洁画框即可。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ywtixing">
+                    <p>雕塑作品</p>
+                    <div class="单个小贴士内容，将来是markdown生成的html">
+                        <h3>存放</h3>
+                        <ul>
+                            <li>
+                                <p>放置雕塑品的理想温度为18℃-24℃，相对湿度为40%-50%。请勿将作品放于过高或过低的温度和湿度下，易引起作品变形损坏；</p>
+                            </li>
+                            <li>
+                                <p>防损请将雕塑品放于平稳处，避免碰撞、叠压作品造成物理损伤。</p>
+                            </li>
+                        </ul>
+                        <h3>清洁与保养</h3>
+                        <ul>
+                            <li>
+                                <p>请用柔软的干布或软毛刷清洁雕塑品表面，切勿用湿布或化学试剂擦拭作品，避免作品受到腐蚀；</p>
+                            </li>
+                            <li>
+                                <p>接触作品时，请尽量保持动作轻柔，避免损害作品。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="height:80px;width:100%;background-color:#fff;"></div>
+        <div style="height: 150px; width: 100%; background-size: cover; background-position: center center;background-image: url('img/product/banner.jpg') " id="advert">
+            <a href="" style="display:block;height:100%" target="_blank"></a>
+        </div>
+        <!-- 推荐 -->
+        <section class="detail_bottom clearfix" id="moreresemblance" name="moreresemblance">
+            <p class="maybeLike">可能你也喜欢</p>
+                <div class="ITEMBOX">
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/01.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info"></p>
+                                <h4> 静.净</h4> &nbsp;2015<br>布面油画 &nbsp;120.00✕100.00cm
+                                <p></p>
+                                <p class="price">¥16,350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/02.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info"></p>
+                                <h4>冷与暖，方与圆</h4> &nbsp;2014<br>综合材料 &nbsp;149.00✕100.00cm
+                                <p></p>
+                                <p class="price">¥11,450</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/03.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info"></p>
+                                <h4>能量起源</h4> &nbsp;2014<br>综合材料 &nbsp;177.00✕100.00cm
+                                <p></p>
+                                <p class="price">¥11,600</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/04.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info">
+                                    </p><h4> 暮色•江城</h4> &nbsp;2016<br>布面油画 &nbsp;90.00✕100.00cm
+                                <p></p>
+                            <p class="price">¥7,350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/05.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info"></p>
+                                <h4>记忆中的芦苇荡</h4> &nbsp;2016<br>布面丙烯 &nbsp;50.00✕40.00cm
+                                <p></p>
+                                <p class="price">¥2,620</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/06.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info">
+                                    </p><h4>
+                                        净·梦
+                                    </h4> &nbsp;2016<br>布面油画 &nbsp;50.00✕40.00cm
+                                <p></p>
+                                <p class="price">¥8,120</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/07.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info">
+                                    </p><h4>
+                                        岛
+                                    </h4> &nbsp;2016<br>布面油画 &nbsp;100.00✕130.00cm
+                                <p></p>
+                                <p class="price">¥22,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ITEM">
+                        <a class="imghover" href="" target="_blank">
+                            <div class="img">
+                                <img src="img/product/tj/08.jpg">
+                            </div>
+                        </a>
+                        <div class="info_box">
+                            <div>
+                                <p class="info">
+                                    </p><h4>
+                                        仲夏之蓝 
+                                    </h4> &nbsp;2017<br>布面丙烯 &nbsp;20.00✕20.00cm
+                                <p></p>
+                                <p class="price">¥1,320</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/blowup.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script>
+        var uid=sessionStorage.getItem("uid");
+        console.log(uid);
+        function aaa(str){
+            var arr=str.split("");
+            var res="";
+            var len=arr.length;
+            for(var i=0;i<len-3;i++){
+                res+=arr[i];
+            }
+            res+=",";
+            for(var i=len-3;i<len;i++){
+                res+=arr[i];
+            }
+            return (res);
+        };
+
+        var id=location.search.slice(4);
+        $("button.cart").click(function(){
+            if(uid==null){
+                alert("请登录，才能加入购物车");
+                location.href="login.html";
+            }else{
+                $.ajax({
+                    type:"get",
+                    url:"php/cart/add.php",
+                    data:{uid,id},
+                    success:function(){
+                        alert("加入购物车成功");
+                    }
+                })
+            }
+        });
+        $.ajax({
+            type:"get",
+            url:"php/findproduct.php",
+            data:{id},
+            dataType:"json",
+            success:function(pro){
+                var {title,artist,num,time,size,price,category,style,theme,caizhi,jianjie,xjo,xjt,pro_url,xjo_url,xjt_url,fdj_url,ysj_url,pro_w,pro_h}=pro[0];
+                $("nav.detailNav>span").html(`
+                    <a href="index.html">艺网</a>
+                            › 
+                             <a href="buy.html?category=${category}">${category}</a>
+                            › 
+                            <a href="">${artist}</a>
+                            ›
+                            <a>${title}</a>
+                `);
+
+                $("div.goodsimgbox").html(`
+                        <div class="img">
+                            <img src="${pro_url}" style="width: ${pro_w}px; height: ${pro_h}px;" class="demo-img">
+                        </div>
+                        <div class="otherimg clearfix">
+                            <div class="active" style="background-image: url(${fdj_url});">
+                            </div>
+                        </div>
+                `);
+
+                $("p.price").html(`￥${aaa(price)}`);
+
+                $("div.detail").html(`
+                        <div class="baseInfo">
+                            <p class="name">
+                                <a href="" target="_blank">${artist}</a>
+                            </p>
+                            <p class="artname">
+                                <span class="mingcheng">${title}</span>,
+                                <span class="createdate">${time}</span>
+                            </p>
+                            <p class="infos">
+                                <span class="caizhi">${caizhi}</span>,
+                                <span class="chicun">${size}cm</span>
+                                <span class="nianfen"></span>
+                            </p>
+                        </div>
+                        <div class="tuijian">
+                            <p>编辑推荐：</p>
+                            <p>${jianjie}</p>
+                            <span>
+                                <br>
+                                ——遥满
+                            </span>
+                        </div>
+                `);
+
+                $("section.workInf").html(`
+                    <p>艺术品信息</p>
+                    <div class="arter">
+                        <div class="imgbox">
+                            <a href="" target="_blank">
+                                <img class="lazy" src="${ysj_url}" alt="${artist}" style="display: inline;">
+                            </a>
+                        </div>
+                        <p class="name">
+                            <a href="" target="_blank">${artist}</a>
+                            <span class="vipIcon" style=""></span>
+                        </p>
+                    <p class="another">
+                        <a href="" target="_blank">
+                            共
+                            <span class="artworkcount">${num}</span>
+                            件作品
+                        </a>
+                    </p>
+                    <a class="more" href="" target="_blank">艺术家完整资料 &gt;</a>
+                    </div>
+                    <ul class="productsInformation">
+                        <li class= "clearfix">
+                            <div><span>作品名称:</span><h1>${title}</h1></div>
+                            <div><span>艺 术 家:<span class="justify_fix"></span></span>${artist}</div>
+                            <div><span>材  质:</span>${caizhi}</div>
+                        </li>
+                        <li class="clearfix">
+                            <div><span>尺  寸:</span>${size}cm</div>
+                            <div><span>创作时间:</span>${time}</div>
+                            <div><span>作品类型:</span>${category}</div>
+                        </li>
+                        <li class="clearfix">
+                            <div><span>风  格:</span>${style}</div>
+                            <div><span>题  材:</span>${theme}</div>
+                        </li>
+                    </ul>
+                ` );
+
+                $("section.workDes").html(`
+                <p>艺术评析</p>
+                <div>
+                    <span class="yinhao yinhaoleft">“</span>
+                    <span class="yinhao yinhaoright">”</span>
+                    <i>
+                        ${jianjie}
+                        <br>
+                        <span>
+                                ——遥满
+                        </span>
+                    </i>
+                </div>
+                <div class="onePingxi">
+                    <img class="lazy" src="${xjo_url}">
+                    <div class="textDes">
+                        <p>${xjo}</p>
+                    </div>
+                </div>
+                <div class="onePingxi">
+                    <img class="lazy"  src="${xjt_url}">
+                    <div class="textDes">
+                        <p>${xjt}</p>
+                    </div>
+                </div>
+                `);
+
+            },
+            error:function(){
+                alert("网络错误");
+            }
+        });
+
+        $("div.btns>span").click(function(){
+            var $span=$(this);
+            var $buy=$("div.buyInfo"),$de=$("div.detail");
+            if($span.is("span.buyInfoBtn")){
+                if($span.siblings().hasClass("active")){
+                    $span.addClass("active").siblings().removeClass("active");
+                    $buy.attr("style","position: relative; top:0px;right:100%").animate({"right":"0%"},500);
+                    $de.attr("style","position: absolute; top: 54px;right:0%").animate({"right":"-100%"},500);
+                }
+            }else{
+                if($span.siblings().hasClass("active")){  
+                    $span.addClass("active").siblings().removeClass("active");
+                    $de.attr("style","position: relative; top:0px;right:-100%").animate({"right":"0%"},500)
+                    $buy.attr("style","position: absolute; top: 54px;right:0%").animate({ "right": "100%"},500);
+                }
+            }
+        });
+        // console.log($(".demo-img"));
+        // window.onload=function () {
+        //     $(".demo-img").blowup({
+        //         background : "#FCEBB6"
+        //     });
+        // };
+    </script>
+</body>
+</html>

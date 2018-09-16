@@ -1,0 +1,307 @@
+
+		html, body, h1, h2, h3, h4, h5, h6, p, a, table, div, span, ul, ol, li, input, textarea, header, nav, section, article, aside, footer, form, option{
+			margin: 0;
+			padding: 0;
+			border:none;
+			outline: none;
+			font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica', 'STHeitiSC-Light', 'Arial';
+			font-size:14px;
+		}
+		input, textarea, select, button{
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			/* -moz-font-feature-settings: 'liga', 'kern'; */
+		}
+		.login_div_box{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 360px;
+			height: 600px;
+			margin: auto;
+			font-size: 14px;
+		}
+		.logo_div{
+			width:100%;
+			height:170px;
+			position:relative;
+		}
+		.login_input_box{
+			width: 300px;
+			height: 340px;
+			padding: 60px 30px 30px 30px;
+			background:#fff;
+			position: relative;
+		}
+		#login_bg00{
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.login_bg2{
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1999;
+		}
+		.login_bg3{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0,0,0,0.5);
+		}
+		.logo_img{
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 80%;
+			margin: auto;
+			cursor: pointer;
+		}
+		.login_close{
+			width:20px;
+			height:20px;
+			position:absolute;
+			top:5px;
+			right:5px;
+		}
+		.unameinput,.upwdinput{
+			width: 100%;
+			height: 50px;
+			position: relative;
+			text-align: left;
+		}
+		.upwdinput{
+			margin-top:20px;
+		}
+		.unamep,.upwdp{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			line-height: 28px;
+			font-size: 14px;
+			color: #ddd;
+			 transition: all .5s; 
+/*			color: initial;
+			letter-spacing: normal;
+			word-spacing: normal;
+			text-transform: none;
+			text-indent: 0px;
+			text-shadow: none;
+			display: inline-block;
+			text-align: start;           */
+		}
+		.uname_input,.upwd_input{
+			position: absolute;
+			width: 100%;
+			height: 28px;
+			top:0;
+			left:0;
+			z-index:2;
+			font-size:18px;
+			background:none;
+			border-bottom:2px solid #ddd;
+		}
+		.line{
+			position: absolute;
+			top: 28px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: #CF680A;
+			width: 0px;
+			margin: 0 auto 0 auto;
+			z-index: 3;
+			transition: width .5s;
+		}
+		.forgetupwd{
+			font-size:12px;
+			color:#666666;
+			float:right;
+			cursor:pointer;
+		}
+		.submit{
+			width:100%;
+			height:44px;
+			background:#cf680a;
+			color:#fff;
+			font-size:16px;
+			margin-top:20px;
+			cursor:pointer;
+			border:none;
+			outline:none;
+		}
+		.ptoregister{
+			font-size:12px;
+			margin-top:10px;
+			width:100%;
+			text-align:center;
+		}
+		.ptoregister span{
+			color:#cf680a;
+			cursor:pointer;
+		}
+		.login_foot{
+			width: 100%;
+			height: 100px;
+			line-height: 122px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		.graylinebox{
+			width: 100%;
+			height: 21px;
+			line-height: 21px;
+			font-size: 12px;
+			margin-top: 30px;
+			color: #eee;
+		}
+		.liner1,.liner2{
+			float: left;
+			width: 120px;
+			height: 1px;
+			margin-top: 10px;
+			background-color: #eee;
+		}
+		.huo{
+			float: left;
+			width: 60px;
+			text-align: center;
+			line-height: 21px;
+		}
+		.foota1,.foota2,.foota3{
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			display: inline-block;
+			color: #666;
+			border: 1px solid #666;
+			margin: 0 15px;
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			font-size: 20px;
+		}
+		.foota1{
+			background:url(../img/login/weibo.png) no-repeat 5px 4px;
+		}
+		.foota2{
+			background:url(../img/login/weixin.png) no-repeat 6px 3px;
+		}
+		.foota3{
+			background:url(../img/login/facebook.png) no-repeat 5px 4px;
+		}
+		.inputtip{
+			display:none;
+			position:absolute;
+			right:0px;
+			top:0;
+			height:30px;
+			width:auto;
+		}
+		.tip1{
+			display:inline-block;
+			position:absolute;
+			top:7.5px;
+			left:-15px;
+			background-color:#ee403c;
+			background-position:-1px 1px;
+			border-radius:50%;
+			width:15px;
+			height:15px;
+			color:#fff;
+			line-height:15px;
+			font-size:15px;
+			text-align:center;
+		}
+		.tip2{
+			border-right: 10px solid #fff;
+			border-bottom: 5px solid transparent;
+			border-top: 5px solid transparent;
+			border-left: 0;
+			height: 0;
+			width: 0;
+			position: absolute;
+			left: 40px;
+			top: 10px;
+		}
+		.tip3{
+			position: absolute;
+			left: 100%;
+			display:inline-block;
+			width: auto;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 10px 0 10px;
+			background-color: #fff;
+			margin-left: 50px;
+			white-space: nowrap;
+			box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+			border-radius: 3px;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+		}
+		#register_box{
+			display:none;
+		}
+		.code_box{
+			width:100%;
+			height:60px;
+			text-align:left;
+			position:relative;
+		}
+		.writecode{
+			width:160px;
+			height:40px;
+			background-color: #f8f8f8;
+			font-size:16px;
+			margin-left:10px;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.createcode{
+			width:130px;
+			height:40px;
+			background:#fff;
+			position:absolute;
+			right:0;
+		}
+		.mail_box{
+			width: 100%;
+			height: 60px;
+			text-align: left;
+			position: relative;
+		}
+		.getmailbutton{
+			float: right;
+			width: 130px;
+			height: 40px;
+			background-color: #CF680A;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+			margin-left: 10px;
+			outline:none;
+			border:none;
+		}
